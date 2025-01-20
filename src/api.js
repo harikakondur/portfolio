@@ -1,9 +1,9 @@
 import { createClient } from "contentful"
 
 const client = createClient({
-  space: 'iyuf2h5g0xxl',
+  space: process.env.REACT_APP_SPACE_ID,
   environment: 'master', 
-  accessToken: 'ebbTYDBZSdHDW1Rr0mtvX1ZG5hVI1aGhIbDtnj8dXZg'
+  accessToken: process.env.REACT_APP_ACCESS_TOKEN
 })
 
 export default async function getEntries(){
