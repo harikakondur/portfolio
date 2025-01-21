@@ -57,7 +57,7 @@ export default function Projects() {
                 {/* Tech Stack */}
                 <div className="flex flex-wrap gap-2">
                   {project.fields.techStack.map((tech) => (
-                    <span className="text-xs p-1 px-2 bg-lime-200 rounded-full">{tech}</span>
+                    <span className="text-xs p-1 px-2 bg-lime-100 rounded-full">{tech}</span>
                   ))}
                 </div>
               </div>
