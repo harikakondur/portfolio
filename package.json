@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@heroicons/react": "^2.2.0",
     "contentful": "^11.4.3",
     "cra-template": "1.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router": "^7.1.1",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "swiper": "^11.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -35,6 +37,7 @@
     ]
   },
   "devDependencies": {
+    "daisyui": "^4.12.23",
     "tailwindcss": "^3.4.17"
   }
 }
