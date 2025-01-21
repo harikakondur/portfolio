@@ -6,7 +6,7 @@ import Projects from './pages/Projects';
 function App() {
   return (
 
-    <Routes>
+    <Routes basename="/portfolio">
       <Route path='/' element={<Home />} />
       <Route path='/projects' element={<Projects />} />
     </Routes>
