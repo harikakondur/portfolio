@@ -20,7 +20,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className="bg-white flex flex-col justify-center items-center overflow-auto">
+    <div className="bg-white flex flex-col justify-center items-center overflow-auto space-x-4">
       <div className="w-full space-y-6 px-6 mt-6">
         {projects.length === 0 ? (
           <p>Loading projects...</p>
@@ -49,7 +49,7 @@ export default function Projects() {
                 {/* Tech Stack */}
                 <div className="flex flex-wrap gap-2">
                   {project.fields.techStack.map((tech) => (
-                    <span className="text-xs p-1 px-2 bg-pink-300 rounded-full">{tech}</span>
+                    <span className="text-xs p-1 px-2 bg-lime-200 rounded-full">{tech}</span>
                   ))}
                 </div>
               </div>
@@ -92,7 +92,7 @@ width: "100%"
               )}
 
               {(project.fields.projectName === "hyperdrive" ) && (
-                  <img className="h-50 border rounded-xl border-zinc-400" src={project.fields.images[0].fields.file.url}  />
+                  <img className="h-72 border rounded-xl border-zinc-400" src={project.fields.images[0].fields.file.url}  />
               )}
 
               {(project.fields.projectName === "halobyhar" ) && (
