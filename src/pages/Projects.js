@@ -45,6 +45,14 @@ export default function Projects() {
                 </div>
                 <div className="text-sm italic">{project.fields.date}</div>
                 <div className="text-sm">{project.fields.projectDescription}</div>
+                {project.fields.projectName === 'whichweight' && (
+                  <div className="text-sm">
+                    <div>- home screen redesign</div>
+                    <div>- workout summaries & progression charts</div>
+                    <div>- free trial experience (athlete assessment)</div>
+                  </div>
+                  
+                )}
 
                 {/* Tech Stack */}
                 <div className="flex flex-wrap gap-2">
@@ -55,32 +63,23 @@ export default function Projects() {
               </div>
 
               <div className="flex-[3] items-center">
-              {/* {project.fields.projectName === "whichweight" && (
+              {project.fields.projectName === "whichweight" && (
                 <div className="flex-1">
-                  <Swiper
-                    spaceBetween={20}
-                    slidesPerView={1}
-                    loop={true}
-                    navigation
-                    pagination={{ clickable: true }}
-                    className="rounded-lg"
-                    style={{ height: "300px", 
-width: "100%" 
-                    }}
-                  >
+                  <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory">
                     {project.fields.images.map((image) => (
-                      <SwiperSlide key={image.sys.id}>
-                        <img
-                          src={`https:${image.fields.file.url}`}
-                          alt={image.fields.title}
-                          className="rounded-md object-contain w-full"
-                        />
-                        <p className="text-xs text-center mt-2">{image.fields.title}</p>
-                      </SwiperSlide>
+                      <div
+                        key={image.sys.id}
+                        className="flex-shrink-0 h-96 border border-zinc-700 rounded-xl overflow-hidden snap-center"
+                      >
+                        <img src={`https:${image.fields.file.url}`}  className="object-cover w-full h-full"/>
+                        <div className="text-center p-2 text-xs rounded-b-xl">
+                          {image.fields.title}
+                        </div>
+                      </div>
                     ))}
-                  </Swiper>
+                  </div>
                 </div>
-              )} */}
+              )}
 
 
               {(project.fields.projectName === "detour" || project.fields.projectName === "asciimation" ) && (
@@ -92,7 +91,12 @@ width: "100%"
               )}
 
               {(project.fields.projectName === "hyperdrive" ) && (
-                  <img className="h-72 border rounded-xl border-zinc-400" src={project.fields.images[0].fields.file.url}  />
+                  <div className="flex justify-center items-center h-72">
+                  <img
+                    className="h-48 w-auto"
+                    src={project.fields.images[0].fields.file.url}
+                  />
+                </div>
               )}
 
               {(project.fields.projectName === "halobyhar" ) && (
