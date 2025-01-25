@@ -36,8 +36,8 @@ export default function Projects() {
                 <div className="text-2xl font-bold">
                 {project.fields.projectName}
                 {project.fields.url && (
-                    <a href={project.fields.url}  target="_blank" rel="noopener noreferrer" className="inline-block mt-2">
-                      <ArrowUpRightIcon className="h-6" />
+                    <a href={project.fields.url}  target="_blank" rel="noopener noreferrer" className="inline-block">
+                      <ArrowUpRightIcon className="h-7 hover:text-lime-500 align-bottom -mb-1" />
                     </a>
                   
                 )} 
