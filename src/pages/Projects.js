@@ -98,7 +98,13 @@ export default function Projects() {
               )}
 
               {(project.fields.projectName === "halobyhar" ) && (
-                  <img className="h-160 border rounded-xl border-zinc-600" src={project.fields.images[0].fields.file.url}  />
+
+                <div className="flex-1">
+                  <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory object-cover">
+                    <img className="h-[26rem] w-auto border rounded-xl border-zinc-600 object-cover" src={project.fields.images[0].fields.file.url}  />
+                    <img className="h-[26rem] w-auto border rounded-xl border-zinc-600 object-cover" src={project.fields.images[1].fields.file.url}  />
+                  </div>
+                </div>
               )}
 
               {project.fields.projectName === "virtual reality projects" && (
