@@ -106,7 +106,7 @@ export default function Projects() {
                   <div className="flex gap-4 h-full">
                     {project.fields.images?.map((image) => (
                       <div key={image.sys.id} className="flex-1 flex flex-col overflow-hidden">
-                        <video controls  autoPlay muted loop className="w-80 h-80 object-cover border border-zinc-600 rounded-xl ">
+                        <video controls  autoPlay muted loop className="w-90 h-90 object-cover border border-zinc-600 rounded-xl ">
                           <source src={image.fields.file.url} type="video/mp4" />
                           Your browser does not support the video tag.
                         </video>
