@@ -8,7 +8,10 @@ const client = createClient({
 
 export default async function getEntries(){
 
-    var response = await client.getEntries()
+    var response = await client.getEntries({
+      content_type: 'project',
+      order: 'fields.priority'
+    })
     // console.log(response.items)
     return response.items
   
