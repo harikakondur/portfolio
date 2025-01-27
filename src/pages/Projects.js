@@ -9,7 +9,6 @@ export default function Projects() {
     try {
       const response = await getEntries();
       setProjects(response);
-      console.log(response);
     } catch (error) {
       console.error("Error fetching projects:", error);
     }
