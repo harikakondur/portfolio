@@ -75,7 +75,7 @@ export default function Projects() {
                   <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory">
                     {project.fields.images.map((image) => (
                       <div key={image.sys.id} className="flex-shrink-0 flex flex-col h-[24rem] overflow-hidden snap-center">
-                        <img src={`https:${image.fields.file.url}`}  className="object-cover w-full h-[22rem] border border-zinc-600 rounded-xl"/>
+                        <img src={`https:${image.fields.file.url}`}    className="object-cover w-full h-[22rem] sm:h-[18rem] md:h-[22rem] border border-zinc-600 rounded-xl"/>
                         <div className="text-center py-2 text-[10px] text-zinc-500 italic">
                           {image.fields.title || "No description available"}
                         </div>
