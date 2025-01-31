@@ -8,12 +8,9 @@ export default function Home(){
     return(
         <div className="bg-light-purple h-screen relative flex flex-col justify-center items-center">
 
-            
-
-            <div className="text-6xl font-mono tracking-widest">
-                <span>harika </span> 
-                <span>kondu</span>
-                <span>r</span>
+            <div className="text-6xl font-mono tracking-widest text-center sm:text-6xl md:text-8xl">
+                <span>harika </span>
+                <span>kondur</span>
             </div>
 
             <div className="mt-8 font-mono italic p-2 items-center text-center text-md space-y-2">
@@ -23,10 +20,7 @@ export default function Home(){
                 <div className= "hover:text-lime-600"><a href="https://www.linkedin.com/in/harika-kondur/" target="_blank">linkedin</a></div>
                 
 
-            </div>
-
-            
-            
+            </div>        
         </div>
         
 
